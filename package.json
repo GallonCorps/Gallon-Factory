@@ -1,0 +1,32 @@
+{
+  "name": "gallon-factory",
+  "version": "0.0.1",
+  "description": "I don't know",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack-dev-server --port 8080"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GallonCorps/Gallon-Factory.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GallonCorps/Gallon-Factory/issues"
+  },
+  "homepage": "https://github.com/GallonCorps/Gallon-Factory#readme",
+  "dependencies": {
+    "babylonjs": "^4.1.0"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "html-webpack-plugin": "^4.4.1",
+    "ts-loader": "^8.0.4",
+    "typescript": "^4.0.3",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
