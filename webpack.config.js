@@ -5,7 +5,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const appDirectory = fs.realpathSync(process.cwd());
 
 module.exports = {
-    entry: path.resolve(appDirectory, "main.ts"), //path to the main .ts file
+    entry: path.resolve(appDirectory, "src/main.ts"), //path to the main .ts file
     output: {
         filename: 'js/bundleName.js' //name for the js file that is created/compiled in memory
     },
@@ -13,7 +13,7 @@ module.exports = {
         extensions: [".tsx", ".ts", ".js"]
     },
     devServer: {
-        host: '0.0.0.0',
+        host: 'localhost',
         port: 8080, //port that we're using for local host (localhost:8080)
         disableHostCheck: true,
         contentBase: path.resolve(appDirectory, "public"), //tells webpack to serve from the public folder
@@ -32,7 +32,7 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             inject: true,
-            template: path.resolve(appDirectory, "index.html")
+            template: path.resolve(appDirectory, "public/index.html")
         }),
         new CleanWebpackPlugin()
     ],
